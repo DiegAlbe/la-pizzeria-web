@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Pizzería | Estrada y Congreso de Tucumán — Concepción del Uruguay</title>
+   <!-- SEO Básico -->
+  <meta name="description" content="Pizzas artesanales a la piedra, empanadas y fainá en Concepción del Uruguay. Pedí online por WhatsApp o visitanos en Estrada y Congreso de Tucumán.">
+  <meta name="keywords" content="pizzeria, concepcion del uruguay, pizza argentina, delivery, empanadas, faina, reservar mesa">
+
+  <!-- Open Graph (Para que se vea lindo al compartir en WhatsApp/Redes) -->
+  <meta property="og:title" content="La Pizzería | La pizza de molde como tiene que ser">
+  <meta property="og:description" content="Pedí tu pizza artesanal con delivery o retiro en Concepción del Uruguay. Hacé tu pedido online en 2 minutos.">
+  <meta property="og:image" content="https://diegalbe.github.io/la-pizzeria-web/banner.webp"> 
+  <meta property="og:url" content="https://diegalbe.github.io/la-pizzeria-web/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bgDark: '#121413',
+            cardDark: '#181A19',
+            accentGold: '#F59E0B',
+            tomato: '#C83E2B',
+            tomatoDark: '#A62F20',
+            creamText: '#F5F5F0'
+          },
+          fontFamily: {
+            display: ['Italiana', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #121413; }
+    ::-webkit-scrollbar-thumb { background: #F59E0B; }
+  </style>
+</head>
+<body class="bg-bgDark text-creamText font-sans antialiased selection:bg-amber-500 selection:text-black">
+
+   <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-[#121413]/90 backdrop-blur-md border-b border-amber-500/20">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Logo en Header con Hover -->
+      <a href="#" class="flex items-center shrink-0 group">
+        <img 
+          src="banner.webp" 
+          alt="La Pizzería - Logo" 
+          class="h-12 sm:h-14 w-auto object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-105"
+        >
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-6 text-xs uppercase tracking-[0.2em] font-semibold text-creamText/80">
+        <a href="#tradicion" class="hover:text-amber-400 transition-colors">Tradición</a>
+        <a href="#armar-pedido" class="hover:text-amber-400 transition-colors text-amber-400">Pedir Online</a>
+        <a href="#carta-salon" class="hover:text-amber-400 transition-colors">Carta Digital</a>
+        <a href="#salon" class="hover:text-amber-400 transition-colors">Salón</a>
+        <a href="#reserva" class="hover:text-amber-400 transition-colors">Reservar Mesa</a>
+        <a href="#ubicacion" class="hover:text-amber-400 transition-colors">Ubicación</a>
+      </nav>
+      
+      <a 
+        href="https://wa.me/5493442642748?text=%C2%A1Hola%20La%20Pizzer%C3%ADa!%20Quiero%20hacer%20un%20pedido%20para%20delivery%2Fretiro."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-amber-500 hover:bg-amber-400 text-black px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition-all shadow-md"
+      >
+        Pedir WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="min-h-[85vh] flex items-center border-b border-amber-500/20 py-16 px-6 relative overflow-hidden bg-gradient-to-b from-[#121413] to-[#181A19]">
+      <div class="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-8">
+          <div class="inline-flex items-center gap-3 border-b border-amber-500 pb-1">
+            <span class="text-xs uppercase tracking-[0.25em] font-bold text-amber-400">Estrada y Congreso de Tucumán — Concepción del Uruguay</span>
+          </div>
+          
+          <h1 class="font-display text-5xl sm:text-7xl lg:text-8xl leading-[0.95] text-white tracking-tight">
+            La pizza de molde,<br/>
+            <span class="italic font-serif text-amber-400">como tiene que ser.</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-creamText/80 max-w-2xl font-light leading-relaxed">
+           Receta familiar, elaboración artesanal y el tiempo necesario para hacer las cosas bien. Media masa, crocancia justa y el equilibrio de ingredientes de la buena pizzería de barrio.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <a 
+              href="#armar-pedido" 
+              class="bg-tomato hover:bg-tomatoDark text-white px-8 py-4 text-center font-bold text-xs uppercase tracking-widest transition-all shadow-md"
+            >
+              Pedir Delivery / Retiro
+            </a>
+            <a 
+              href="#reserva" 
+              class="border-2 border-amber-500/60 text-amber-300 hover:bg-amber-500 hover:text-black px-8 py-4 text-center font-bold text-xs uppercase tracking-widest transition-all"
+            >
+              Reservar Mesa en Salón
+            </a>
+          </div>
+        </div>
+
+        <!-- IMAGEN DEL BANNER PRINCIPAL CON RESPLANDOR Y HOVER -->
+        <div class="lg:col-span-6 w-full flex justify-center relative group">
+          <div class="absolute inset-0 bg-amber-500/10 blur-3xl rounded-full scale-75 group-hover:bg-amber-500/20 transition-all duration-700"></div>
+          
+          <img 
+            src="fachada-noche.webp" 
+            alt="Fachada de La Pizzería de noche" 
+            class="w-full h-[350px] sm:h-[450px] lg:h-[500px] object-cover object-center drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-lg border-2 border-amber-500/30 relative z-10 transition-transform duration-500 group-hover:scale-[1.02]"
+            fetchpriority="high"
+          >
+        </div>  
+      </div>
+    </section>
+
+    <!-- MANIFIESTO -->
+    <section id="tradicion" class="py-20 px-6 border-b border-amber-500/20 bg-[#151716]">
+      <div class="max-w-4xl mx-auto text-center space-y-6">
+        <span class="text-xs uppercase tracking-[0.25em] font-bold text-amber-400">Nuestra Filosofía</span>
+        <h2 class="font-display text-3xl sm:text-5xl leading-tight text-white italic">
+          Una receta familiar, el respeto por el oficio y el sabor de siempre.
+        </h2>
+        <div class="w-16 h-[2px] bg-amber-400 mx-auto"></div>
+        <p class="text-base sm:text-lg text-creamText/75 leading-relaxed max-w-2xl mx-auto font-light">
+          Mantenemos vivo el oficio de pizzería tradicional de barrio. La masa descansa el tiempo necesario para lograr algo único y genuino.
+        </p>
+      </div>
+    </section>
+
+    <!-- MÓDULO INTERACTIVO DE PEDIDOS (Prioridad de Pedido) -->
+    <section id="armar-pedido" class="py-20 px-6 border-b border-amber-500/20 bg-[#121413]">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center space-y-3 mb-12">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-amber-400">Mostrador & Delivery</span>
+          <h2 class="font-display text-3xl sm:text-5xl text-white">Armá tu Pedido Online</h2>
+          <p class="text-sm text-creamText/70 max-w-xl mx-auto">
+            Seleccioná productos del menú para armar tu comanda y enviarla directo por WhatsApp.
+          </p>
+        </div>
+
+        <!-- CATEGORY TABS -->
+        <div class="flex flex-wrap justify-center gap-2 mb-8 border-b border-amber-500/20 pb-4 text-xs uppercase tracking-wider font-semibold" id="category-tabs">
+          <button class="cat-tab px-4 py-2 bg-amber-500 text-black transition-all" data-cat="pizzas">Pizzas</button>
+          <button class="cat-tab px-4 py-2 bg-[#181A19] text-creamText border border-amber-500/30 hover:border-amber-500 transition-all" data-cat="empanadas">Empanadas & Fainá</button>
+          <button class="cat-tab px-4 py-2 bg-[#181A19] text-creamText border border-amber-500/30 hover:border-amber-500 transition-all" data-cat="tartas">Tartas</button>
+          <button class="cat-tab px-4 py-2 bg-[#181A19] text-creamText border border-amber-500/30 hover:border-amber-500 transition-all" data-cat="sandwiches">Sandwiches</button>
+          <button class="cat-tab px-4 py-2 bg-[#181A19] text-creamText border border-amber-500/30 hover:border-amber-500 transition-all" data-cat="bebidas">Bebidas</button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- PRODUCT SELECTOR AREA -->
+          <div class="lg:col-span-8 space-y-6">
+            
+            <!-- TAB CONTENT: PIZZAS -->
+            <div class="cat-panel space-y-4" id="panel-pizzas">
+              <div class="bg-[#181A19] border border-amber-500/20 p-6 shadow-sm">
+                <h3 class="font-display text-2xl font-bold border-b border-white/10 pb-3 mb-4 text-amber-300">Variedades de Pizza</h3>
+                <div class="space-y-4 text-sm" id="pizza-list"></div>
+              </div>
+            </div>
+
+            <!-- TAB CONTENT: EMPANADAS & FAINÁ -->
+            <div class="cat-panel hidden space-y-4" id="panel-empanadas">
+              <div class="bg-[#181A19] border border-amber-500/20 p-6 shadow-sm">
+                <h3 class="font-display text-2xl font-bold border-b border-white/10 pb-3 mb-4 text-amber-300">Empanadas & Fainá</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm" id="empanada-list"></div>
+              </div>
+            </div>
+
+            <!-- TAB CONTENT: TARTAS -->
+            <div class="cat-panel hidden space-y-4" id="panel-tartas">
+              <div class="bg-[#181A19] border border-amber-500/20 p-6 shadow-sm">
+                <h3 class="font-display text-2xl font-bold border-b border-white/10 pb-3 mb-4 text-amber-300">Tartas (Porción Media)</h3>
+                <div class="space-y-3 text-sm" id="tarta-list"></div>
+              </div>
+            </div>
+
+            <!-- TAB CONTENT: SANDWICHES -->
+            <div class="cat-panel hidden space-y-4" id="panel-sandwiches">
+              <div class="bg-[#181A19] border border-amber-500/20 p-6 shadow-sm">
+                <h3 class="font-display text-2xl font-bold border-b border-white/10 pb-3 mb-4 text-amber-300">Lomitos, Milanesas & Hamburguesas</h3>
+                <div class="space-y-4 text-sm" id="sandwich-list"></div>
+              </div>
+            </div>
+
+            <!-- TAB CONTENT: BEBIDAS -->
+            <div class="cat-panel hidden space-y-4" id="panel-bebidas">
+              <div class="bg-[#181A19] border border-amber-500/20 p-6 shadow-sm">
+                <h3 class="font-display text-2xl font-bold border-b border-white/10 pb-3 mb-4 text-amber-300">Cervezas, Vinos & Gaseosas</h3>
+                <div class="space-y-3 text-sm" id="bebida-list"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- CART SUMMARY SIDEBAR -->
+          <div class="lg:col-span-4 lg:sticky lg:top-28 bg-[#181A19] text-creamText p-6 border border-amber-500/40 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-white/10 pb-3 mb-4">
+              <h3 class="font-display text-2xl font-bold text-amber-300">Tu Pedido</h3>
+              <span class="text-[10px] uppercase tracking-widest text-black bg-amber-500 px-2 py-1 font-semibold" id="cart-count">0 ítems</span>
+            </div>
+            
+            <div id="cart-items" class="space-y-3 max-h-[320px] overflow-y-auto pr-1 text-sm text-white/70">
+              <p class="text-xs italic text-white/40 py-6 text-center">Todavía no agregaste productos.</p>
+            </div>
+            
+            <div class="border-t border-white/10 pt-4 mt-6 space-y-4">
+              <div class="flex justify-between items-center">
+                <span class="text-xs uppercase tracking-widest text-amber-400 font-bold">Total Estimado:</span>
+                <span id="cart-total" class="font-mono font-bold text-2xl text-amber-300">$0</span>
+              </div>
+
+              <div>
+                <label class="block text-[10px] uppercase tracking-widest text-white/60 mb-1 font-semibold">Tipo de Entrega</label>
+                <select id="delivery-type" class="w-full bg-[#121413] border border-white/20 text-xs py-2 px-3 text-white focus:outline-none focus:border-amber-500">
+                  <option value="Retiro por Mostrador">Retiro por Mostrador (Estrada y Congreso)</option>
+                  <option value="Envío a Domicilio">Envío a Domicilio (Delivery)</option>
+                </select>
+              </div>
+
+              <button 
+                id="send-whatsapp-btn"
+                disabled
+                class="w-full bg-gray-700 cursor-not-allowed text-white font-bold text-xs uppercase tracking-widest py-4 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
+              >
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>Enviar pedido a WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTA DIGITAL INTERACTIVA (CON PROMO PORTEÑA) -->
+    <section id="carta-salon" class="py-24 px-6 bg-[#0E1B14] text-creamText">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center space-y-4 mb-12">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-amber-400">Menú Oficial para Salón</span>
+          <h2 class="font-display text-4xl sm:text-6xl text-white">Carta Digital Interactiva</h2>
+          <p class="text-white/60 text-sm max-w-md mx-auto">
+            Explorá todas las especialidades y bebidas disponibles para disfrutar en nuestras mesas.
+          </p>
+        </div>
+
+        <!-- PROMO PORTEÑA (SOLO INFORMATIVA) -->
+        <div id="promo" class="mb-16 border-2 border-amber-400/60 p-8 sm:p-10 relative bg-[#121413]/90 shadow-2xl rounded-sm">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-8 space-y-4">
+              <span class="bg-amber-400 text-black text-xs uppercase tracking-widest font-extrabold px-3 py-1 inline-block">
+                Combo Exclusivo de Salón
+              </span>
+              <h3 class="font-display text-3xl sm:text-5xl tracking-tight text-amber-300">Promo Porteña</h3>
+              <p class="text-creamText/90 text-sm sm:text-base leading-relaxed font-light">
+                La costumbre tradicional de las pizzerías de centro. Para sentarse, charlar y disfrutar.
+              </p>
+              <ul class="text-xs sm:text-sm tracking-wide space-y-2 pt-2 text-white uppercase font-medium">
+                <li>✓ ½ Pizza Muzzarella</li>
+                <li>✓ 2 Porciones de Fainá</li>
+                <li>✓ 2 Vasos de Moscato</li>
+              </ul>
+            </div>
+            <div class="md:col-span-4 text-left md:text-right border-t md:border-t-0 md:border-l border-amber-500/30 pt-6 md:pt-0 md:pl-8 flex flex-col justify-center h-full">
+              <div>
+                <p class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Precio Especial</p>
+                <p class="font-display text-5xl sm:text-6xl font-bold my-2 text-white">$20.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACORDEONES DE LA CARTA -->
+        <div class="space-y-4 font-sans">
+          
+          <!-- MUZZARELLA -->
+          <div class="border border-amber-500/20 bg-[#15261D] overflow-hidden">
+            <button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none salon-btn group cursor-pointer">
+              <span class="font-display text-2xl text-amber-300 group-hover:text-white transition-colors">Pizzas de Muzzarella</span>
+              <span class="text-xl font-light text-amber-400 group-hover:text-white icon">+</span>
+            </button>
+            <div class="salon-content hidden px-6 pb-6 pt-2 border-t border-white/5">
+              <div class="flex justify-end text-xs uppercase tracking-widest text-white/40 mb-4 gap-8 font-semibold">
+                <span>Grande</span><span>½ Pizza</span>
+              </div>
+              <div class="space-y-4 text-sm">
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Muzzarella</h4><p class="text-xs text-white/50">Salsa, muzzarella, orégano, aceitunas</p></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$16.000</span><span class="w-16 text-right text-white/80">$8.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Muzzarella con morrón</h4><p class="text-xs text-white/50">Salsa, muzzarella, morrones, orégano y aceitunas</p></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$19.000</span><span class="w-16 text-right text-white/80">$9.500</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Muzzarella con huevo</h4><p class="text-xs text-white/50">Salsa, muzzarella, huevo, orégano y aceitunas</p></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$19.000</span><span class="w-16 text-right text-white/80">$9.500</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Muzzarella con anchoas</h4><p class="text-xs text-white/50">Salsa, muzzarella, anchoas, orégano y aceitunas</p></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$21.000</span><span class="w-16 text-right text-white/80">$10.500</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Muzzarella con choclo</h4><p class="text-xs text-white/50">Choclo en granos, salsa blanca, muzzarella</p></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$20.000</span><span class="w-16 text-right text-white/80">$10.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Muzzarella con provenzal</h4><p class="text-xs text-white/50">Salsa, muzzarella, ajo y perejil</p></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$19.000</span><span class="w-16 text-right text-white/80">$9.500</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NAPOLITANAS -->
+          <div class="border border-amber-500/20 bg-[#15261D] overflow-hidden">
+            <button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none salon-btn group cursor-pointer">
+              <span class="font-display text-2xl text-amber-300 group-hover:text-white transition-colors">Pizzas Napolitanas</span>
+              <span class="text-xl font-light text-amber-400 group-hover:text-white icon">+</span>
+            </button>
+            <div class="salon-content hidden px-6 pb-6 pt-2 border-t border-white/5">
+              <div class="flex justify-end text-xs uppercase tracking-widest text-white/40 mb-4 gap-8 font-semibold">
+                <span>Grande</span><span>½ Pizza</span>
+              </div>
+              <div class="space-y-4 text-sm">
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Napolitana</h4><p class="text-xs text-white/50">Con tomate en rodajas y aceite de oliva</p></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$20.000</span><span class="w-16 text-right text-white/80">$10.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Napolitana con morrón</h4><p class="text-xs text-white/50">Tomate, morrón y aceite de oliva</p></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$22.000</span><span class="w-16 text-right text-white/80">$11.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Napolitana con huevo</h4><p class="text-xs text-white/50">Tomate, huevo y aceite de oliva</p></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$22.000</span><span class="w-16 text-right text-white/80">$11.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Napolitana con anchoas</h4><p class="text-xs text-white/50">Tomate, anchoas y aceite de oliva</p></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$25.000</span><span class="w-16 text-right text-white/80">$12.500</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Napolitana con provenzal</h4><p class="text-xs text-white/50">Tomate, provenzal y aceite de oliva</p></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$22.000</span><span class="w-16 text-right text-white/80">$11.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Napolitana con jamón</h4><p class="text-xs text-white/50">Tomate, jamón y aceite de oliva</p></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$23.000</span><span class="w-16 text-right text-white/80">$11.500</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ESPECIALES -->
+          <div class="border border-amber-500/20 bg-[#15261D] overflow-hidden">
+            <button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none salon-btn group cursor-pointer">
+              <span class="font-display text-2xl text-amber-300 group-hover:text-white transition-colors">Pizzas Especiales y Fugazzetas</span>
+              <span class="text-xl font-light text-amber-400 group-hover:text-white icon">+</span>
+            </button>
+            <div class="salon-content hidden px-6 pb-6 pt-2 border-t border-white/5">
+              <div class="flex justify-end text-xs uppercase tracking-widest text-white/40 mb-4 gap-8 font-semibold">
+                <span>Grande</span><span>½ Pizza</span>
+              </div>
+              <div class="space-y-4 text-sm">
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Especial</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$20.000</span><span class="w-16 text-right text-white/80">$10.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Especial con anchoas</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$25.000</span><span class="w-16 text-right text-white/80">$12.500</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Especial con huevo</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$22.000</span><span class="w-16 text-right text-white/80">$11.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Especial de jamón crudo</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$24.000</span><span class="w-16 text-right text-white/80">$12.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Especial de panceta</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$23.000</span><span class="w-16 text-right text-white/80">$11.500</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Fugazzeta</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$19.000</span><span class="w-16 text-right text-white/80">$9.500</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Fugazzeta con Roquefort</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$23.000</span><span class="w-16 text-right text-white/80">$11.500</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MÁS VARIEDADES & GOURMET -->
+          <div class="border border-amber-500/20 bg-[#15261D] overflow-hidden">
+            <button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none salon-btn group cursor-pointer">
+              <span class="font-display text-2xl text-amber-300 group-hover:text-white transition-colors">Más Variedades y Gourmet</span>
+              <span class="text-xl font-light text-amber-400 group-hover:text-white icon">+</span>
+            </button>
+            <div class="salon-content hidden px-6 pb-6 pt-2 border-t border-white/5">
+              <div class="flex justify-end text-xs uppercase tracking-widest text-white/40 mb-4 gap-8 font-semibold">
+                <span>Grande</span><span>½ Pizza</span>
+              </div>
+              <div class="space-y-4 text-sm">
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Roquefort</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$22.000</span><span class="w-16 text-right text-white/80">$11.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Panceta y verdeo</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$24.000</span><span class="w-16 text-right text-white/80">$12.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Calabresa</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$23.000</span><span class="w-16 text-right text-white/80">$11.500</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">De palmitos</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$25.000</span><span class="w-16 text-right text-white/80">$12.500</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Gallega</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$26.000</span><span class="w-16 text-right text-white/80">$13.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Pollo</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$25.000</span><span class="w-16 text-right text-white/80">$12.500</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Champiñón y panceta</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$26.000</span><span class="w-16 text-right text-white/80">$13.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Atún</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$22.000</span><span class="w-16 text-right text-white/80">$11.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Provoleta</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$22.000</span><span class="w-16 text-right text-white/80">$11.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">De salchichas</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$20.000</span><span class="w-16 text-right text-white/80">$10.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Ananá</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$22.000</span><span class="w-16 text-right text-white/80">$11.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Ananá con jamón</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$25.000</span><span class="w-16 text-right text-white/80">$12.500</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Verdura</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$20.000</span><span class="w-16 text-right text-white/80">$10.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Cuatro quesos</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$26.000</span><span class="w-16 text-right text-white/80">$13.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Rúcula con parmesano</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$23.000</span><span class="w-16 text-right text-white/80">$11.500</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Rúcula con jamón crudo</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$26.000</span><span class="w-16 text-right text-white/80">$13.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Rúcula con panceta</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$24.000</span><span class="w-16 text-right text-white/80">$12.000</span></div></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Panceta y ciruelas</h4></div><div class="flex gap-8 font-mono font-bold text-amber-400"><span class="w-16 text-right">$24.000</span><span class="w-16 text-right text-white/80">$12.000</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EMPANADAS & FAINÁ -->
+          <div class="border border-amber-500/20 bg-[#15261D] overflow-hidden">
+            <button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none salon-btn group cursor-pointer">
+              <span class="font-display text-2xl text-amber-300 group-hover:text-white transition-colors">Empanadas y Fainá</span>
+              <span class="text-xl font-light text-amber-400 group-hover:text-white icon">+</span>
+            </button>
+            <div class="salon-content hidden px-6 pb-6 pt-2 border-t border-white/5">
+              <div class="space-y-4 text-sm">
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Empanada (Unidad)</h4><p class="text-xs text-white/50">Carne, Carne dulce, Pollo, Jamón y queso, Cebolla y Roquefort, Cebolla y queso, Roquefort, Verdura, Humita</p></div><span class="font-mono font-bold text-amber-400">$2.500</span></div>
+                <div class="flex justify-between items-baseline border-b border-white/5 pb-3"><div><h4 class="font-semibold text-white">Fainá (Porción)</h4></div><span class="font-mono font-bold text-amber-400">$4.000</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HAMBURGUESAS, LOMITOS Y MILANESAS -->
+          <div class="border border-amber-500/20 bg-[#15261D] overflow-hidden">
+            <button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none salon-btn group cursor-pointer">
+              <span class="font-display text-2xl text-amber-300 group-hover:text-white transition-colors">Hamburguesas, Lomitos y Milanesas</span>
+              <span class="text-xl font-light text-amber-400 group-hover:text-white icon">+</span>
+            </button>
+            <div class="salon-content hidden px-6 pb-6 pt-2 border-t border-white/5">
+              <div class="space-y-6 text-sm">
+                <div>
+                  <h4 class="font-display text-lg text-amber-300 mb-2">Hamburguesas</h4>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga y Tomate</span><span class="font-mono font-bold text-amber-400">$10.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Jamón y Queso</span><span class="font-mono font-bold text-amber-400">$11.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga, Tomate, Jamón y Queso</span><span class="font-mono font-bold text-amber-400">$12.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga, Tomate, Jamón, Queso y Huevo</span><span class="font-mono font-bold text-amber-400">$14.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga, Tomate, Jamón, Queso, Huevo, Panceta y Morrón</span><span class="font-mono font-bold text-amber-400">$16.000</span></div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="font-display text-lg text-amber-300 mb-2">Lomitos</h4>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga y Tomate</span><span class="font-mono font-bold text-amber-400">$13.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Jamón y Queso</span><span class="font-mono font-bold text-amber-400">$14.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga, Tomate, Jamón y Queso</span><span class="font-mono font-bold text-amber-400">$15.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga, Tomate, Jamón, Queso y Huevo</span><span class="font-mono font-bold text-amber-400">$16.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga, Tomate, Jamón, Queso, Huevo, Panceta y Morrón</span><span class="font-mono font-bold text-amber-400">$18.000</span></div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="font-display text-lg text-amber-300 mb-2">Milanesas</h4>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga y Tomate</span><span class="font-mono font-bold text-amber-400">$12.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Jamón y Queso</span><span class="font-mono font-bold text-amber-400">$13.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga, Tomate, Jamón y Queso</span><span class="font-mono font-bold text-amber-400">$14.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga, Tomate, Jamón, Queso y Huevo</span><span class="font-mono font-bold text-amber-400">$15.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga, Tomate, Jamón, Queso, Huevo, Panceta y Morrón</span><span class="font-mono font-bold text-amber-400">$17.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2 text-white/60"><span>Adicional Cheddar</span><span class="font-mono font-bold text-amber-400">$2.000</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BEBIDAS Y CERVEZAS -->
+          <div class="border border-amber-500/20 bg-[#15261D] overflow-hidden">
+            <button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none salon-btn group cursor-pointer">
+              <span class="font-display text-2xl text-amber-300 group-hover:text-white transition-colors">Bebidas, Gaseosas y Cervezas</span>
+              <span class="text-xl font-light text-amber-400 group-hover:text-white icon">+</span>
+            </button>
+            <div class="salon-content hidden px-6 pb-6 pt-2 border-t border-white/5">
+              <div class="space-y-6 text-sm">
+                <div>
+                  <h4 class="font-display text-lg text-amber-300 mb-2">Línea 500ml y Vinos</h4>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Agua / Awafrut / Pepsi / 7UP / Mirinda / H2O / Paso de los Toros (500ml)</span><span class="font-mono font-bold text-amber-400">$4.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Moscato (Vaso)</span><span class="font-mono font-bold text-amber-400">$4.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Brahma / Quilmes (500ml)</span><span class="font-mono font-bold text-amber-400">$4.500</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Quilmes Stout / Quilmes 0.0 (500ml)</span><span class="font-mono font-bold text-amber-400">$5.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Stella Artois (500ml)</span><span class="font-mono font-bold text-amber-400">$6.000</span></div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="font-display text-lg text-amber-300 mb-2">Línea 1.5L y Cervezas 1 Litro</h4>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Agua / Pepsi / 7UP / Mirinda / Paso de los Toros (1.5L)</span><span class="font-mono font-bold text-amber-400">$8.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>H2O / Agua saborizada (1.5L)</span><span class="font-mono font-bold text-amber-400">$5.000 / $8.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Pepsi Light / 7UP Free (1.5L)</span><span class="font-mono font-bold text-amber-400">$8.500</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Brahma / Quilmes / Quilmes Bajo Cero (1 Litro)</span><span class="font-mono font-bold text-amber-400">$9.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Quilmes Stout (1 Litro)</span><span class="font-mono font-bold text-amber-400">$9.500</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Stella Artois (1 Litro)</span><span class="font-mono font-bold text-amber-400">$12.000</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN SALÓN COMEDOR CON RESERVAS -->
+    <section id="salon" class="py-20 px-6 bg-[#121413] border-b border-amber-500/20">
+      <div class="max-w-6xl mx-auto space-y-12">
+        <div class="text-center space-y-4 max-w-2xl mx-auto">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-amber-400">Nuestro Espacio</span>
+          <h2 class="font-display text-4xl sm:text-5xl text-white">El Salón Comedor</h2>
+          <p class="text-sm text-creamText/70">
+            Un ambiente cálido, mística de barrio porteño y los colores de siempre. El lugar ideal para disfrutar en el corazón de Concepción del Uruguay una pizza inigualable.
+          </p>
+        </div>
+
+        <!-- FORMULARIO DE RESERVA -->
+        <div id="reserva" class="bg-[#181A19] border-2 border-amber-500/40 p-6 sm:p-10 rounded-sm shadow-2xl max-w-3xl mx-auto relative overflow-hidden">
+          <div class="absolute inset-0 bg-amber-500/5 blur-2xl rounded-full scale-75 pointer-events-none"></div>
+          <div class="relative z-10">
+            <div class="text-center mb-8">
+              <h3 class="font-display text-3xl sm:text-4xl text-amber-300 mb-2">Reservá tu Mesa</h3>
+              <p class="text-xs text-creamText/70 uppercase tracking-widest">Asegurá tu lugar en el salón</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+              <!-- Personas -->
+              <div>
+                <label class="block text-[10px] uppercase tracking-widest text-creamText/70 mb-2 font-semibold">Personas</label>
+                <select id="res-guests" class="w-full bg-[#121413] border border-white/20 text-sm py-3 px-4 text-white focus:outline-none focus:border-amber-500 appearance-none">
+                  <option value="1">1 Persona</option>
+                  <option value="2" selected>2 Personas</option>
+                  <option value="3">3 Personas</option>
+                  <option value="4">4 Personas</option>
+                  <option value="5">5 Personas</option>
+                  <option value="6">6 Personas</option>
+                  <option value="Más de 6">Más de 6</option>
+                </select>
+              </div>
+              <!-- Fecha -->
+              <div>
+                <label class="block text-[10px] uppercase tracking-widest text-creamText/70 mb-2 font-semibold">Fecha</label>
+                <input type="date" id="res-date" class="w-full bg-[#121413] border border-white/20 text-sm py-3 px-4 text-white focus:outline-none focus:border-amber-500 [color-scheme:dark]">
+              </div>
+              <!-- Horario -->
+              <div>
+                <label class="block text-[10px] uppercase tracking-widest text-creamText/70 mb-2 font-semibold">Horario</label>
+                <select id="res-time" class="w-full bg-[#121413] border border-white/20 text-sm py-3 px-4 text-white focus:outline-none focus:border-amber-500 appearance-none">
+                  <option value="20:00">20:00 hs</option>
+                  <option value="20:30">20:30 hs</option>
+                  <option value="21:00" selected>21:00 hs</option>
+                  <option value="21:30">21:30 hs</option>
+                  <option value="22:00">22:00 hs</option>
+                  <option value="22:30">22:30 hs</option>
+                  <option value="23:00">23:00 hs</option>
+                </select>
+              </div>
+            </div>
+
+            <button id="btn-reserva" class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm uppercase tracking-widest py-4 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              Solicitar Reserva por WhatsApp
+            </button>
+            <p class="text-[10px] text-center text-creamText/50 mt-3">Te confirmaremos la disponibilidad a la brevedad.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          <!-- Imagen 1 del Salón -->
+          <div class="border-2 border-amber-500/30 bg-[#181A19] p-3 shadow-xl group hover:border-amber-500/60 transition-colors duration-500">
+            <div class="overflow-hidden rounded-sm relative">
+              <img 
+                src="salon-1.webp" 
+                alt="Interior del salón comedor" 
+                class="w-full h-80 md:h-96 object-cover object-center transform transition-transform duration-700 group-hover:scale-110"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="absolute inset-0 shadow-[inset_0_0_20px_rgba(0,0,0,0.5)] pointer-events-none"></div>
+            </div>
+            <p class="text-[11px] uppercase tracking-widest text-creamText/60 mt-3 text-center font-semibold group-hover:text-amber-400 transition-colors">
+              Vista General del Salón Comedor
+            </p>
+          </div>
+
+          <!-- Imagen 2 del Salón (Mural) -->
+          <div class="border-2 border-amber-500/30 bg-[#181A19] p-3 shadow-xl group hover:border-amber-500/60 transition-colors duration-500">
+            <div class="overflow-hidden rounded-sm relative">
+              <img 
+                src="interior-mural.webp" 
+                alt="Mural artístico en el interior del salón" 
+                class="w-full h-80 md:h-96 object-cover object-center transform transition-transform duration-700 group-hover:scale-110"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="absolute inset-0 shadow-[inset_0_0_20px_rgba(0,0,0,0.5)] pointer-events-none"></div>
+            </div>
+            <p class="text-[11px] uppercase tracking-widest text-creamText/60 mt-3 text-center font-semibold group-hover:text-amber-400 transition-colors">
+              Arte y Tradición en cada Mesa
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: GALERÍA DE FOTOS CON ESTILOS APLICADOS -->
+    <section id="galeria" class="py-20 px-6 bg-[#0E1B14] border-b border-amber-500/20">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center space-y-4 mb-12">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-amber-400">Nuestras Especialidades</span>
+          <h2 class="font-display text-4xl sm:text-5xl text-white">Galería de Fotos</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Fila 1 -->
+          <div class="group relative overflow-hidden border-2 border-amber-500/10 hover:border-amber-500/60 transition-colors duration-500 bg-[#181A19] aspect-square">
+            <img src="galeria-pizza-1.webp" alt="Pizza Especial" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+              <span class="text-amber-300 font-display text-xl uppercase tracking-wider border-b border-amber-500/50 pb-1">Especial</span>
+            </div>
+          </div>
+          
+          <div class="group relative overflow-hidden border-2 border-amber-500/10 hover:border-amber-500/60 transition-colors duration-500 bg-[#181A19] aspect-square">
+            <img src="galeria-pizza-2.webp" alt="Pizza con Ananá" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+              <span class="text-amber-300 font-display text-xl uppercase tracking-wider border-b border-amber-500/50 pb-1">Ananá</span>
+            </div>
+          </div>
+
+          <!-- Imagen vertical que ocupa 2 filas -->
+          <div class="group relative overflow-hidden border-2 border-amber-500/10 hover:border-amber-500/60 transition-colors duration-500 bg-[#181A19] aspect-square sm:aspect-auto sm:row-span-2">
+            <img src="galeria-faina.webp" alt="Fainá recién horneada" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+              <span class="text-amber-300 font-display text-2xl uppercase tracking-wider border-b border-amber-500/50 pb-1">Fainá</span>
+            </div>
+          </div>
+
+          <div class="group relative overflow-hidden border-2 border-amber-500/10 hover:border-amber-500/60 transition-colors duration-500 bg-[#181A19] aspect-square">
+            <img src="galeria-pizza-3.webp" alt="Pizza con rúcula" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+              <span class="text-amber-300 font-display text-xl uppercase tracking-wider border-b border-amber-500/50 pb-1">Rúcula</span>
+            </div>
+          </div>
+
+          <!-- Fila 2 -->
+          <div class="group relative overflow-hidden border-2 border-amber-500/10 hover:border-amber-500/60 transition-colors duration-500 bg-[#181A19] aspect-square">
+            <img src="galeria-pizza-4.webp" alt="Pizza con morrones" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+              <span class="text-amber-300 font-display text-xl uppercase tracking-wider border-b border-amber-500/50 pb-1">Morrón</span>
+            </div>
+          </div>
+
+          <div class="group relative overflow-hidden border-2 border-amber-500/10 hover:border-amber-500/60 transition-colors duration-500 bg-[#181A19] aspect-square">
+            <img src="galeria-pizza-5.webp" alt="Pizza de Muzzarella" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+              <span class="text-amber-300 font-display text-xl uppercase tracking-wider border-b border-amber-500/50 pb-1">Muzzarella</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCIÓN DE RESEÑAS Y TESTIMONIOS -->
+    <section id="resenas" class="py-20 px-6 bg-[#151716] border-b border-amber-500/20">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center space-y-4 mb-12">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-amber-400">Lo que dicen nuestros clientes</span>
+          <h2 class="font-display text-4xl sm:text-5xl text-white">Reseñas</h2>
+          <p class="text-sm text-creamText/70 max-w-xl mx-auto">
+            La opinión de quienes nos eligen es lo que nos impulsa a seguir mejorando.
+          </p>
+        </div>
+
+        <!-- Grilla de Reseñas de Ejemplo (Reemplazar con reseñas reales) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <!-- Reseña 1 -->
+          <div class="bg-[#181A19] border border-amber-500/30 p-6 rounded-sm shadow-lg space-y-3">
+            <div class="flex text-amber-400 text-lg">
+              ★★★★★
+            </div>
+            <p class="text-sm text-creamText/80 italic">"Lugar muy agradable. Siempre que visito a mi hija, vamos a deleitarnos con sus comidas."</p>
+            <p class="text-xs font-semibold text-amber-300">— Stella</p>
+          </div>
+          <!-- Reseña 2 -->
+          <div class="bg-[#181A19] border border-amber-500/30 p-6 rounded-sm shadow-lg space-y-3">
+            <div class="flex text-amber-400 text-lg">
+              ★★★★★
+            </div>
+            <p class="text-sm text-creamText/80 italic">"Ricas pizzas y atención muy cordiales. Excelente lugar y muy buena atención."</p>
+            <p class="text-xs font-semibold text-amber-300">— Matias F.</p>
+          </div>
+          <!-- Reseña 3 -->
+          <div class="bg-[#181A19] border border-amber-500/30 p-6 rounded-sm shadow-lg space-y-3">
+            <div class="flex text-amber-400 text-lg">
+              ★★★★★
+            </div>
+            <p class="text-sm text-creamText/80 italic">"Limpieza, atención y muy rico se come. La mejor relación precio-calidad."</p>
+            <p class="text-xs font-semibold text-amber-300">— Claudia A.</p>
+          </div>
+        </div>
+
+        <!-- CTA para dejar reseña en Google -->
+<section class="py-12 window-bg">
+  <div class="container mx-auto px-4">
+    <div class="text-center bg-[#121413] p-8 rounded-sm border-2 border-amber-500/40 shadow-2xl max-w-2xl mx-auto relative overflow-hidden">
+      <div class="absolute inset-0 bg-amber-500/5 blur-2xl rounded-full scale-75 pointer-events-none"></div>
+      <div class="relative z-10">
+        <h3 class="font-display text-2xl text-amber-300 mb-2">¿Disfrutaste tu experiencia?</h3>
+        <p class="text-sm text-creamText/70 mb-6">Tu reseña en Google nos ayuda a crecer y a que más gente nos conozca.</p>
+        <a 
+          href="https://google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 bg-white text-black font-bold text-xs uppercase tracking-widest px-8 py-4 hover:bg-amber-400 transition-all shadow-lg"
+        >
+          <!-- Icono de Google -->
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+          Dejanos tu reseña en Google
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- UBICACIÓN & MAPA -->
+    <section id="ubicacion" class="py-24 px-6 border-b border-amber-500/20 bg-[#151716]">
+      <div class="max-w-5xl mx-auto space-y-12">
+        <div class="text-center space-y-4">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-amber-400">Encuentro Tradicional</span>
+          <h2 class="font-display text-4xl sm:text-6xl text-white">Cómo llegar a la esquina de siempre</h2>
+          <p class="text-lg text-creamText/70 max-w-xl mx-auto font-light">
+            Estamos ubicados en <strong class="text-amber-300">Estrada y Congreso de Tucumán</strong>, Concepción del Uruguay. 
+            Muy cerca de los principales puntos neurálgicos de la ciudad:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
+          <div class="bg-[#181A19] border border-amber-500/30 p-5 space-y-2">
+            <h3 class="font-display text-xl text-amber-300">Desde Plaza Francisco Ramírez</h3>
+            <p class="text-creamText/70 font-light">A pocas cuadras del centro histórico y administrativo de la ciudad.</p>
+          </div>
+          <div class="bg-[#181A19] border border-amber-500/30 p-5 space-y-2">
+            <h3 class="font-display text-xl text-amber-300">Zona Costanera / Puerto</h3>
+            <p class="text-creamText/70 font-light">Acceso directo desde la zona ribereña y los balnearios tradicionales.</p>
+          </div>
+          <div class="bg-[#181A19] border border-amber-500/30 p-5 space-y-2">
+            <h3 class="font-display text-xl text-amber-300">Universidad / UCU</h3>
+            <p class="text-creamText/70 font-light">Punto de referencia clave para estudiantes y comunidad académica.</p>
+          </div>
+        </div>
+
+        <div class="border-2 border-amber-500/40 p-2 bg-[#181A19] shadow-2xl">
+          <div class="w-full h-96 relative overflow-hidden">
+          <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.7202172435054!2d-58.2357401!3d-32.480174399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95afdbfb8e5fad65%3A0x49c91b81a5dfe41f!2zIkxhIFBpenplcsOtYSAi!5e0!3m2!1ses-419!2sar!4v1793815843427!5m2!1ses-419!2sar"
+  width="100%" 
+  height="100%" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade"
+  title="Mapa de ubicación de La Pizzería en Concepción del Uruguay">
+</iframe>
+          </div>
+        </div>
+
+        <div class="pt-2 flex flex-col items-center gap-4 text-center">
+          <a 
+            href="https://wa.me/5493442642748?text=%C2%A1Hola%20La%20Pizzer%C3%ADa!%20Quiero%20hacer%20un%20pedido%20para%20delivery%2Fretiro."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm uppercase tracking-widest px-10 py-5 transition-all shadow-lg flex items-center gap-3"
+          >
+            Pedir por WhatsApp
+          </a>
+          <p class="text-xs text-creamText/50">Miércoles a domingo de 20:00 a 00:00 hs.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-creamText/60 py-12 px-6 border-t border-amber-500/20 text-sm">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+      <div>
+        <p class="font-display text-2xl text-amber-300 italic mb-1">La Pizzería</p>
+        <p class="text-xs">Estrada y Congreso de Tucumán — Concepción del Uruguay, Entre Ríos</p>
+      </div>
+      <div class="text-xs space-y-1">
+        <p>Teléfonos: <span class="text-white font-mono">427585</span> / <span class="text-amber-400 font-mono font-bold">3442-642748</span></p>
+        <p>Miércoles a domingo de 20:00 a 00:00 hs</p>
+      </div>
+      <div class="text-xs text-white/40">&copy; 2026 La Pizzería. Recetas artesanales.</div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FAB -->
+  <a 
+    href="https://wa.me/5493442642748?text=%C2%A1Hola%20La%20Pizzer%C3%ADa!%20Quiero%20hacer%20un%20pedido%20para%20delivery%2Fretiro."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+    class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center cursor-pointer border-2 border-amber-400/40"
+  >
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // --- LÓGICA DE RESERVAS ---
+      const btnReserva = document.getElementById('btn-reserva');
+      btnReserva.addEventListener('click', () => {
+        const guests = document.getElementById('res-guests').value;
+        const date = document.getElementById('res-date').value;
+        const time = document.getElementById('res-time').value;
+
+        if (!date) {
+          alert('Por favor, seleccioná una fecha para la reserva.');
+          return;
+        }
+
+        // Formatear la fecha para que se vea linda (DD/MM/YYYY)
+        const dateParts = date.split('-');
+        const formattedDate = `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`;
+
+        const text = `¡Hola La Pizzería! Quiero reservar una mesa en el salón.\n\n👥 *Personas:* ${guests}\n📅 *Fecha:* ${formattedDate}\n⏰ *Hora:* ${time} hs\n\nQuedo a la espera de la confirmación. ¡Gracias!`;
+        const url = `https://wa.me/5493442642748?text=${encodeURIComponent(text)}`;
+        window.open(url, '_blank');
+      });
+
+      // --- LÓGICA DE LA CARTA Y PEDIDOS ---
+      const salonBtns = document.querySelectorAll('.salon-btn');
+      salonBtns.forEach(button => {
+        button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector('.icon');
+          const isHidden = content.classList.contains('hidden');
+
+          document.querySelectorAll('.salon-content').forEach(c => c.classList.add('hidden'));
+          document.querySelectorAll('.icon').forEach(i => i.textContent = '+');
+
+          if (isHidden) {
+            content.classList.remove('hidden');
+            if (icon) icon.textContent = '−';
+          }
+        });
+      });
+      if (salonBtns[0]) salonBtns[0].click();
+
+      const pizzaItems = [
+        { id: 'p1', name: 'Muzarella', gPrice: 16000, mPrice: 8000 },
+        { id: 'p2', name: 'Muzarella con Morrón', gPrice: 19000, mPrice: 9500 },
+        { id: 'p3', name: 'Muzarella con Huevo', gPrice: 19000, mPrice: 9500 },
+        { id: 'p4', name: 'Muzzarella con Anchoas', gPrice: 21000, mPrice: 10500 },
+        { id: 'p5', name: 'Muzzarella con Choclo', gPrice: 20000, mPrice: 10000 },
+        { id: 'p6', name: 'Muzzarella con Provenzal', gPrice: 19000, mPrice: 9500 },
+        { id: 'p7', name: 'Napolitana', gPrice: 20000, mPrice: 10000 },
+        { id: 'p8', name: 'Napolitana con Morrón', gPrice: 22000, mPrice: 11000 },
+        { id: 'p9', name: 'Napolitana con Huevo', gPrice: 22000, mPrice: 11000 },
+        { id: 'p10', name: 'Napolitana con Anchoas', gPrice: 25000, mPrice: 12500 },
+        { id: 'p11', name: 'Napolitana con Provenzal', gPrice: 22000, mPrice: 11000 },
+        { id: 'p12', name: 'Napolitana con Jamón', gPrice: 23000, mPrice: 11500 },
+        { id: 'p13', name: 'Especial', gPrice: 20000, mPrice: 10000 },
+        { id: 'p14', name: 'Especial con Anchoas', gPrice: 25000, mPrice: 12500 },
+        { id: 'p15', name: 'Especial con Huevo', gPrice: 22000, mPrice: 11000 },
+        { id: 'p16', name: 'Especial de Jamón Crudo', gPrice: 24000, mPrice: 12000 },
+        { id: 'p17', name: 'Especial de Panceta', gPrice: 23000, mPrice: 11500 },
+        { id: 'p18', name: 'Fugazzeta', gPrice: 19000, mPrice: 9500 },
+        { id: 'p19', name: 'Fugazzeta con Roquefort', gPrice: 23000, mPrice: 11500 },
+        { id: 'p20', name: 'Roquefort', gPrice: 22000, mPrice: 11000 },
+        { id: 'p21', name: 'Calabresa', gPrice: 23000, mPrice: 11500 },
+        { id: 'p22', name: 'Panceta y Verdeo', gPrice: 24000, mPrice: 12000 },
+        { id: 'p23', name: 'De Palmitos', gPrice: 25000, mPrice: 12500 },
+        { id: 'p24', name: 'Gallega', gPrice: 26000, mPrice: 13000 },
+        { id: 'p25', name: 'Atún', gPrice: 22000, mPrice: 11000 },
+        { id: 'p26', name: 'Provoleta', gPrice: 22000, mPrice: 11000 },
+        { id: 'p27', name: 'De Salchichas', gPrice: 20000, mPrice: 10000 },
+        { id: 'p28', name: 'Ananá / Ananá con Jamón', gPrice: 25000, mPrice: 12500 },
+        { id: 'p29', name: 'Cuatro Quesos', gPrice: 26000, mPrice: 13000 },
+        { id: 'p30', name: 'Rúcula con Parmesano', gPrice: 23000, mPrice: 11500 },
+        { id: 'p31', name: 'Rúcula con Jamón Crudo', gPrice: 26000, mPrice: 13000 },
+        { id: 'p32', name: 'Rúcula con Panceta', gPrice: 24000, mPrice: 12000 },
+        { id: 'p33', name: 'Champiñón con Panceta', gPrice: 26000, mPrice: 13000 }
+      ];
+
+      const empanadaItems = [
+        { name: 'Empanada de Carne', price: 2500 },
+        { name: 'Empanada Carne Dulce', price: 2500 },
+        { name: 'Empanada de Pollo', price: 2500 },
+        { name: 'Empanada Jamón y Queso', price: 2500 },
+        { name: 'Empanada Cebolla y Queso', price: 2500 },
+        { name: 'Empanada Cebolla y Roquefort', price: 2500 },
+        { name: 'Empanada de Roquefort', price: 2500 },
+        { name: 'Empanada de Verdura', price: 2500 },
+        { name: 'Empanada de Humita', price: 2500 },
+        { name: 'Fainá (Porción)', price: 4000 }
+      ];
+
+      const tartaItems = [
+        { name: 'Tarta de Pollo (Media)', price: 16000 },
+        { name: 'Tarta Jamón y Queso (Media)', price: 15000 },
+        { name: 'Tarta de Verdura (Media)', price: 15000 },
+        { name: 'Tarta de Humita (Media)', price: 15000 }
+      ];
+
+      const sandwichItems = [
+        { name: 'Lomito Lechuga y Tomate', price: 13000 },
+        { name: 'Lomito Jamón y Queso', price: 14000 },
+        { name: 'Lomito Lechuga, Tomate, Jamón y Queso', price: 15000 },
+        { name: 'Lomito Lechuga, Tomate, Jamón, Queso y Huevo', price: 16000 },
+        { name: 'Lomito Completo (Panceta y Morrón)', price: 18000 },
+        { name: 'Milanesa Lechuga y Tomate', price: 12000 },
+        { name: 'Milanesa Jamón y Queso', price: 13000 },
+        { name: 'Milanesa Lechuga, Tomate, Jamón y Queso', price: 14000 },
+        { name: 'Milanesa Lechuga, Tomate, Jamón, Queso y Huevo', price: 15000 },
+        { name: 'Milanesa Completa (Panceta y Morrón)', price: 17000 },
+        { name: 'Hamburguesa Lechuga y Tomate', price: 10000 },
+        { name: 'Hamburguesa Jamón y Queso', price: 11000 },
+        { name: 'Hamburguesa Lechuga, Tomate, Jamón y Queso', price: 12000 },
+        { name: 'Hamburguesa Lechuga, Tomate, Jamón, Queso y Huevo', price: 14000 },
+        { name: 'Hamburguesa Completa (Panceta y Morrón)', price: 16000 },
+        { name: 'Adicional Cheddar', price: 2000 }
+      ];
+
+      const bebidaItems = [
+        { name: 'Gaseosa / Agua 500ml', price: 4000 },
+        { name: 'Gaseosa 1.5L (Pepsi/7UP/Mirinda)', price: 8000 },
+        { name: 'Agua Saborizada 1.5L', price: 5000 },
+        { name: 'Cerveza Quilmes / Brahma 1L', price: 9000 },
+        { name: 'Cerveza Stella Artois 1L', price: 12000 },
+        { name: 'Vaso de Moscato', price: 4000 }
+      ];
+
+      function renderSelectorPanels() {
+        const pizzaContainer = document.getElementById('pizza-list');
+        pizzaContainer.innerHTML = pizzaItems.map(p => `
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-white/10 pb-3 gap-2">
+            <span class="font-semibold text-creamText">${p.name}</span>
+            <div class="flex gap-2 self-end sm:self-auto">
+              <button class="add-cart-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1.5 font-medium transition-colors cursor-pointer flex items-center gap-2" data-name="Pizza ${p.name} (Grande)" data-price="${p.gPrice}">
+                + Grande ($${p.gPrice.toLocaleString('es-AR')})
+                <span class="qty-badge hidden bg-black text-amber-400 px-1.5 py-0.5 rounded text-[10px]" data-item="Pizza ${p.name} (Grande)"></span>
+              </button>
+              <button class="add-cart-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1.5 font-medium transition-colors cursor-pointer flex items-center gap-2" data-name="Pizza ${p.name} (Media)" data-price="${p.mPrice}">
+                + Media ($${p.mPrice.toLocaleString('es-AR')})
+                <span class="qty-badge hidden bg-black text-amber-400 px-1.5 py-0.5 rounded text-[10px]" data-item="Pizza ${p.name} (Media)"></span>
+              </button>
+            </div>
+          </div>
+        `).join('');
+
+        const empanadaContainer = document.getElementById('empanada-list');
+        empanadaContainer.innerHTML = empanadaItems.map(item => `
+          <div class="flex justify-between items-center border-b border-white/10 pb-2">
+            <div>
+              <p class="font-semibold text-xs text-creamText">${item.name}</p>
+              <p class="text-[10px] text-amber-400 font-mono font-bold">$${item.price.toLocaleString('es-AR')}</p>
+            </div>
+            <button class="add-cart-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1 font-medium transition-colors cursor-pointer flex items-center gap-2" data-name="${item.name}" data-price="${item.price}">
+              + Agregar
+              <span class="qty-badge hidden bg-black text-amber-400 px-1.5 py-0.5 rounded text-[10px]" data-item="${item.name}"></span>
+            </button>
+          </div>
+        `).join('');
+
+        const tartaContainer = document.getElementById('tarta-list');
+        tartaContainer.innerHTML = tartaItems.map(item => `
+          <div class="flex justify-between items-center border-b border-white/10 pb-2">
+            <div>
+              <p class="font-semibold text-creamText">${item.name}</p>
+              <p class="text-xs text-amber-400 font-mono font-bold">$${item.price.toLocaleString('es-AR')}</p>
+            </div>
+            <button class="add-cart-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1.5 font-medium transition-colors cursor-pointer flex items-center gap-2" data-name="${item.name}" data-price="${item.price}">
+              + Agregar
+              <span class="qty-badge hidden bg-black text-amber-400 px-1.5 py-0.5 rounded text-[10px]" data-item="${item.name}"></span>
+            </button>
+          </div>
+        `).join('');
+
+        const sandwichContainer = document.getElementById('sandwich-list');
+        sandwichContainer.innerHTML = sandwichItems.map(item => `
+          <div class="flex justify-between items-center border-b border-white/10 pb-2">
+            <div>
+              <p class="font-semibold text-creamText">${item.name}</p>
+              <p class="text-xs text-amber-400 font-mono font-bold">$${item.price.toLocaleString('es-AR')}</p>
+            </div>
+            <button class="add-cart-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1.5 font-medium transition-colors cursor-pointer flex items-center gap-2" data-name="${item.name}" data-price="${item.price}">
+              + Agregar
+              <span class="qty-badge hidden bg-black text-amber-400 px-1.5 py-0.5 rounded text-[10px]" data-item="${item.name}"></span>
+            </button>
+          </div>
+        `).join('');
+
+        const bebidaContainer = document.getElementById('bebida-list');
+        bebidaContainer.innerHTML = bebidaItems.map(item => `
+          <div class="flex justify-between items-center border-b border-white/10 pb-2">
+            <div>
+              <p class="font-semibold text-creamText">${item.name}</p>
+              <p class="text-xs text-amber-400 font-mono font-bold">$${item.price.toLocaleString('es-AR')}</p>
+            </div>
+            <button class="add-cart-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1.5 font-medium transition-colors cursor-pointer flex items-center gap-2" data-name="${item.name}" data-price="${item.price}">
+              + Agregar
+              <span class="qty-badge hidden bg-black text-amber-400 px-1.5 py-0.5 rounded text-[10px]" data-item="${item.name}"></span>
+            </button>
+          </div>
+        `).join('');
+
+        document.querySelectorAll('.add-cart-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const name = btn.getAttribute('data-name');
+            const price = parseInt(btn.getAttribute('data-price'));
+            addToCart(name, price);
+          });
+        });
+      }
+
+      let cart = [];
+
+      function addToCart(name, price) {
+        const existing = cart.find(i => i.name === name);
+        if (existing) {
+          existing.qty += 1;
+        } else {
+          cart.push({ name, price, qty: 1 });
+        }
+        updateCartUI();
+      }
+
+      function removeFromCart(index) {
+        cart.splice(index, 1);
+        updateCartUI();
+      }
+
+      function updateItemBadges() {
+        document.querySelectorAll('.qty-badge').forEach(badge => {
+          badge.textContent = '';
+          badge.classList.add('hidden');
+        });
+        cart.forEach(item => {
+          const badges = document.querySelectorAll(`.qty-badge[data-item="${item.name}"]`);
+          badges.forEach(badge => {
+            badge.textContent = `${item.qty}`;
+            badge.classList.remove('hidden');
+          });
+        });
+      }
+
+      function updateCartUI() {
+        const container = document.getElementById('cart-items');
+        const totalEl = document.getElementById('cart-total');
+        const countEl = document.getElementById('cart-count');
+        const sendBtn = document.getElementById('send-whatsapp-btn');
+
+        if (cart.length === 0) {
+          container.innerHTML = `<p class="text-xs italic text-white/40 py-6 text-center">Todavía no agregaste productos.</p>`;
+          totalEl.textContent = '$0';
+          countEl.textContent = '0 ítems';
+          sendBtn.disabled = true;
+          sendBtn.className = 'w-full bg-gray-700 cursor-not-allowed text-white font-bold text-xs uppercase tracking-widest py-4 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg';
+          updateItemBadges();
+          return;
+        }
+
+        let total = 0;
+        let totalQty = 0;
+        container.innerHTML = '';
+
+        cart.forEach((item, index) => {
+          const subtotal = item.price * item.qty;
+          total += subtotal;
+          totalQty += item.qty;
+
+          const itemRow = document.createElement('div');
+          itemRow.className = 'flex justify-between items-center border-b border-white/10 pb-2 text-xs';
+          itemRow.innerHTML = `
+            <div class="pr-2">
+              <p class="font-medium text-white">${item.name}</p>
+              <p class="text-[10px] text-white/50">${item.qty} x $${item.price.toLocaleString('es-AR')}</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <span class="font-mono text-xs font-bold text-amber-400">$${subtotal.toLocaleString('es-AR')}</span>
+              <button class="remove-btn text-white/40 hover:text-white px-1 font-mono cursor-pointer" data-idx="${index}">✕</button>
+            </div>
+          `;
+          container.appendChild(itemRow);
+        });
+
+        totalEl.textContent = `$${total.toLocaleString('es-AR')}`;
+        countEl.textContent = `${totalQty} ${totalQty === 1 ? 'ítem' : 'ítems'}`;
+
+        sendBtn.disabled = false;
+        sendBtn.className = 'w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs uppercase tracking-widest py-4 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg cursor-pointer';
+
+        document.querySelectorAll('.remove-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const idx = parseInt(btn.getAttribute('data-idx'));
+            removeFromCart(idx);
+          });
+        });
+
+        updateItemBadges();
+      }
+
+      const tabs = document.querySelectorAll('.cat-tab');
+      const panels = document.querySelectorAll('.cat-panel');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const cat = tab.getAttribute('data-cat');
+          
+          tabs.forEach(t => {
+            t.className = 'cat-tab px-4 py-2 bg-[#181A19] text-creamText border border-amber-500/30 hover:border-amber-500 transition-all cursor-pointer';
+          });
+          tab.className = 'cat-tab px-4 py-2 bg-amber-500 text-black transition-all cursor-pointer';
+
+          panels.forEach(p => p.classList.add('hidden'));
+          const targetPanel = document.getElementById(`panel-${cat}`);
+          if (targetPanel) targetPanel.classList.remove('hidden');
+        });
+      });
+
+      const sendBtn = document.getElementById('send-whatsapp-btn');
+      sendBtn.addEventListener('click', () => {
+        if (cart.length === 0) return;
+
+        const deliveryType = document.getElementById('delivery-type').value;
+        let total = 0;
+        let text = `¡Hola La Pizzería! Quiero realizar un pedido:\n\n`;
+        text += `📌 *Tipo de Entrega:* ${deliveryType}\n\n`;
+        text += `*Detalle del Pedido:*\n`;
+
+        cart.forEach(item => {
+          const sub = item.price * item.qty;
+          total += sub;
+          text += `• ${item.qty}x ${item.name} - $${sub.toLocaleString('es-AR')}\n`;
+        });
+
+        text += `\n*TOTAL ESTIMADO:* $${total.toLocaleString('es-AR')}\n`;
+        text += `\nQuedo a la espera de la confirmación. ¡Muchas gracias!`;
+
+        const url = `https://wa.me/5493442642748?text=${encodeURIComponent(text)}`;
+        window.open(url, '_blank');
+      });
+
+      renderSelectorPanels();
+      updateCartUI();
+    });
+  </script>
+</body>
+</html>
