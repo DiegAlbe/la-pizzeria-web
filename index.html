@@ -47,37 +47,57 @@
 <body class="bg-bgDark text-creamText font-sans antialiased selection:bg-amber-500 selection:text-black">
 
    <!-- HEADER -->
-  <header class="sticky top-0 z-40 bg-[#121413]/90 backdrop-blur-md border-b border-amber-500/20">
-    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-      
-      <!-- Logo en Header con Hover -->
-      <a href="#" class="flex items-center shrink-0 group">
-        <img 
-          src="banner.webp" 
-          alt="La Pizzería - Logo" 
-          class="h-12 sm:h-14 w-auto object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-105"
-        >
-      </a>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Pizzería | Pizzas Artesanales y Delivery en Concepción del Uruguay</title>
+  
+  <!-- SEO Básico -->
+  <meta name="description" content="Pedí las mejores pizzas artesanales a la piedra, empanadas y fainá en Concepción del Uruguay. Delivery online por WhatsApp o reservá tu mesa en Estrada y Congreso de Tucumán.">
+  <meta name="keywords" content="pizzeria concepcion del uruguay, delivery pizza entrega, empanadas, faina, donde comer en concepcion del uruguay, la pizzeria estrada">
+  <link rel="canonical" href="https://diegalbe.github.io/la-pizzeria-web/">
 
-      <nav class="hidden md:flex items-center space-x-6 text-xs uppercase tracking-[0.2em] font-semibold text-creamText/80">
-        <a href="#tradicion" class="hover:text-amber-400 transition-colors">Tradición</a>
-        <a href="#armar-pedido" class="hover:text-amber-400 transition-colors text-amber-400">Pedir Online</a>
-        <a href="#carta-salon" class="hover:text-amber-400 transition-colors">Carta Digital</a>
-        <a href="#salon" class="hover:text-amber-400 transition-colors">Salón</a>
-        <a href="#reserva" class="hover:text-amber-400 transition-colors">Reservar Mesa</a>
-        <a href="#ubicacion" class="hover:text-amber-400 transition-colors">Ubicación</a>
-      </nav>
-      
-      <a 
-        href="https://wa.me/5493442642748?text=%C2%A1Hola%20La%20Pizzer%C3%ADa!%20Quiero%20hacer%20un%20pedido%20para%20delivery%2Fretiro."
-        target="_blank"
-        rel="noopener noreferrer"
-        class="bg-amber-500 hover:bg-amber-400 text-black px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition-all shadow-md"
-      >
-        Pedir WhatsApp
-      </a>
-    </div>
-  </header>
+  <!-- Open Graph (Redes Sociales y WhatsApp) -->
+  <meta property="og:title" content="La Pizzería | La pizza de molde como tiene que ser en Concepción del Uruguay">
+  <meta property="og:description" content="Pizzas artesanales de molde y al plato. Hacé tu pedido online por WhatsApp o visitanos en Estrada y Congreso de Tucumán.">
+  <meta property="og:image" content="https://diegalbe.github.io/la-pizzeria-web/banner.webp"> 
+  <meta property="og:url" content="https://diegalbe.github.io/la-pizzeria-web/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Datos Estructurados (Schema.org para SEO Local - ¡Crucial!) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "La Pizzería",
+    "image": "https://diegalbe.github.io/la-pizzeria-web/banner.webp",
+    "url": "https://diegalbe.github.io/la-pizzeria-web/",
+    "telephone": "+5493442642748",
+    "servesCuisine": "Pizza argentina, Empanadas, Fainá",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Estrada y Congreso de Tucumán",
+      "addressLocality": "Concepción del Uruguay",
+      "addressRegion": "Entre Ríos",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -32.4825, 
+      "longitude": -58.2314
+    },
+    "priceRange": "$$"
+  }
+  </script>
+
+  <!-- Fuentes y Estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- (Configuraciones de Tailwind y Estilos se mantienen igual) -->
+</head>
 
   <main>
     <!-- HERO SECTION -->
