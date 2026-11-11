@@ -935,86 +935,76 @@
       ];
 
       function renderSelectorPanels() {
+        // Helper: genera el control dual (botón agregar ↔ stepper inline)
+        const buildControl = (name, price, label) => `
+          <div class="qty-control inline-flex" data-name="${name}" data-price="${price}">
+            <button class="add-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1.5 font-medium transition-colors cursor-pointer">
+              ${label}
+            </button>
+            <div class="stepper hidden items-stretch border border-amber-500/60 text-xs">
+              <button class="minus-btn px-2.5 py-1.5 text-amber-300 hover:bg-tomato hover:text-white transition-colors cursor-pointer" aria-label="Quitar uno">−</button>
+              <span class="qty-display px-3 py-1.5 text-amber-300 font-bold min-w-[2.5ch] text-center border-x border-amber-500/40">1</span>
+              <button class="plus-btn px-2.5 py-1.5 text-amber-300 hover:bg-amber-500 hover:text-black transition-colors cursor-pointer" aria-label="Agregar uno">+</button>
+            </div>
+          </div>
+        `;
+
         const pizzaContainer = document.getElementById('pizza-list');
         pizzaContainer.innerHTML = pizzaItems.map(p => `
           <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-white/10 pb-3 gap-2">
             <span class="font-semibold text-creamText">${p.name}</span>
             <div class="flex gap-2 self-end sm:self-auto">
-              <button class="add-cart-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1.5 font-medium transition-colors cursor-pointer flex items-center gap-2" data-name="Pizza ${p.name} (Grande)" data-price="${p.gPrice}">
-                + Grande ($${p.gPrice.toLocaleString('es-AR')})
-                <span class="qty-badge hidden bg-black text-amber-400 px-1.5 py-0.5 rounded text-[10px]" data-item="Pizza ${p.name} (Grande)"></span>
-              </button>
-              <button class="add-cart-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1.5 font-medium transition-colors cursor-pointer flex items-center gap-2" data-name="Pizza ${p.name} (Media)" data-price="${p.mPrice}">
-                + Media ($${p.mPrice.toLocaleString('es-AR')})
-                <span class="qty-badge hidden bg-black text-amber-400 px-1.5 py-0.5 rounded text-[10px]" data-item="Pizza ${p.name} (Media)"></span>
-              </button>
+              ${buildControl(`Pizza ${p.name} (Grande)`, p.gPrice, `+ Grande ($${p.gPrice.toLocaleString('es-AR')})`)}
+              ${buildControl(`Pizza ${p.name} (Media)`,  p.mPrice, `+ Media ($${p.mPrice.toLocaleString('es-AR')})`)}
             </div>
           </div>
         `).join('');
 
         const empanadaContainer = document.getElementById('empanada-list');
         empanadaContainer.innerHTML = empanadaItems.map(item => `
-          <div class="flex justify-between items-center border-b border-white/10 pb-2">
+          <div class="flex justify-between items-center border-b border-white/10 pb-2 gap-2">
             <div>
               <p class="font-semibold text-xs text-creamText">${item.name}</p>
               <p class="text-[10px] text-amber-400 font-mono font-bold">$${item.price.toLocaleString('es-AR')}</p>
             </div>
-            <button class="add-cart-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1 font-medium transition-colors cursor-pointer flex items-center gap-2" data-name="${item.name}" data-price="${item.price}">
-              + Agregar
-              <span class="qty-badge hidden bg-black text-amber-400 px-1.5 py-0.5 rounded text-[10px]" data-item="${item.name}"></span>
-            </button>
+            ${buildControl(item.name, item.price, '+ Agregar')}
           </div>
         `).join('');
 
         const tartaContainer = document.getElementById('tarta-list');
         tartaContainer.innerHTML = tartaItems.map(item => `
-          <div class="flex justify-between items-center border-b border-white/10 pb-2">
+          <div class="flex justify-between items-center border-b border-white/10 pb-2 gap-2">
             <div>
               <p class="font-semibold text-creamText">${item.name}</p>
               <p class="text-xs text-amber-400 font-mono font-bold">$${item.price.toLocaleString('es-AR')}</p>
             </div>
-            <button class="add-cart-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1.5 font-medium transition-colors cursor-pointer flex items-center gap-2" data-name="${item.name}" data-price="${item.price}">
-              + Agregar
-              <span class="qty-badge hidden bg-black text-amber-400 px-1.5 py-0.5 rounded text-[10px]" data-item="${item.name}"></span>
-            </button>
+            ${buildControl(item.name, item.price, '+ Agregar')}
           </div>
         `).join('');
 
         const sandwichContainer = document.getElementById('sandwich-list');
         sandwichContainer.innerHTML = sandwichItems.map(item => `
-          <div class="flex justify-between items-center border-b border-white/10 pb-2">
+          <div class="flex justify-between items-center border-b border-white/10 pb-2 gap-2">
             <div>
               <p class="font-semibold text-creamText">${item.name}</p>
               <p class="text-xs text-amber-400 font-mono font-bold">$${item.price.toLocaleString('es-AR')}</p>
             </div>
-            <button class="add-cart-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1.5 font-medium transition-colors cursor-pointer flex items-center gap-2" data-name="${item.name}" data-price="${item.price}">
-              + Agregar
-              <span class="qty-badge hidden bg-black text-amber-400 px-1.5 py-0.5 rounded text-[10px]" data-item="${item.name}"></span>
-            </button>
+            ${buildControl(item.name, item.price, '+ Agregar')}
           </div>
         `).join('');
 
         const bebidaContainer = document.getElementById('bebida-list');
         bebidaContainer.innerHTML = bebidaItems.map(item => `
-          <div class="flex justify-between items-center border-b border-white/10 pb-2">
+          <div class="flex justify-between items-center border-b border-white/10 pb-2 gap-2">
             <div>
               <p class="font-semibold text-creamText">${item.name}</p>
               <p class="text-xs text-amber-400 font-mono font-bold">$${item.price.toLocaleString('es-AR')}</p>
             </div>
-            <button class="add-cart-btn text-xs border border-amber-500/50 text-amber-300 hover:bg-amber-500 hover:text-black px-3 py-1.5 font-medium transition-colors cursor-pointer flex items-center gap-2" data-name="${item.name}" data-price="${item.price}">
-              + Agregar
-              <span class="qty-badge hidden bg-black text-amber-400 px-1.5 py-0.5 rounded text-[10px]" data-item="${item.name}"></span>
-            </button>
+            ${buildControl(item.name, item.price, '+ Agregar')}
           </div>
         `).join('');
 
-        document.querySelectorAll('.add-cart-btn').forEach(btn => {
-          btn.addEventListener('click', () => {
-            const name = btn.getAttribute('data-name');
-            const price = parseInt(btn.getAttribute('data-price'));
-            addToCart(name, price);
-          });
-        });
+        syncControls();
       }
 
       let cart = [];
@@ -1029,23 +1019,37 @@
         updateCartUI();
       }
 
-      function removeFromCart(index) {
-        cart.splice(index, 1);
+      function syncControls() {
+        document.querySelectorAll('.qty-control').forEach(ctrl => {
+          const item = cart.find(i => i.name === ctrl.dataset.name);
+          const addBtn    = ctrl.querySelector('.add-btn');
+          const stepper   = ctrl.querySelector('.stepper');
+          const qtyDisplay = ctrl.querySelector('.qty-display');
+
+          if (item) {
+            addBtn.classList.add('hidden');
+            stepper.classList.remove('hidden');
+            stepper.classList.add('flex');
+            qtyDisplay.textContent = item.qty;
+          } else {
+            addBtn.classList.remove('hidden');
+            stepper.classList.add('hidden');
+            stepper.classList.remove('flex');
+          }
+        });
+      }
+
+      function changeQty(name, delta) {
+        const idx = cart.findIndex(i => i.name === name);
+        if (idx === -1) return;
+        cart[idx].qty += delta;
+        if (cart[idx].qty <= 0) cart.splice(idx, 1);
         updateCartUI();
       }
 
-      function updateItemBadges() {
-        document.querySelectorAll('.qty-badge').forEach(badge => {
-          badge.textContent = '';
-          badge.classList.add('hidden');
-        });
-        cart.forEach(item => {
-          const badges = document.querySelectorAll(`.qty-badge[data-item="${item.name}"]`);
-          badges.forEach(badge => {
-            badge.textContent = `${item.qty}`;
-            badge.classList.remove('hidden');
-          });
-        });
+      function removeFromCart(index) {
+        cart.splice(index, 1);
+        updateCartUI();
       }
 
       function updateCartUI() {
@@ -1060,7 +1064,7 @@
           countEl.textContent = '0 ítems';
           sendBtn.disabled = true;
           sendBtn.className = 'w-full bg-gray-700 cursor-not-allowed text-white font-bold text-xs uppercase tracking-widest py-4 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg';
-          updateItemBadges();
+          syncControls();
           return;
         }
 
@@ -1101,7 +1105,7 @@
           });
         });
 
-        updateItemBadges();
+        syncControls();
       }
 
       const tabs = document.querySelectorAll('.cat-tab');
@@ -1147,6 +1151,24 @@
 
       renderSelectorPanels();
       updateCartUI();
+
+      // Delegación de eventos (sobrevive a re-renders de los paneles)
+      document.getElementById('armar-pedido').addEventListener('click', (e) => {
+        const addBtn   = e.target.closest('.add-btn');
+        const plusBtn  = e.target.closest('.plus-btn');
+        const minusBtn = e.target.closest('.minus-btn');
+
+        if (addBtn) {
+          const ctrl = addBtn.closest('.qty-control');
+          if (ctrl) addToCart(ctrl.dataset.name, parseInt(ctrl.dataset.price, 10));
+        } else if (plusBtn) {
+          const ctrl = plusBtn.closest('.qty-control');
+          if (ctrl) changeQty(ctrl.dataset.name, +1);
+        } else if (minusBtn) {
+          const ctrl = minusBtn.closest('.qty-control');
+          if (ctrl) changeQty(ctrl.dataset.name, -1);
+        }
+      });
     });
   </script>
 </body>
