@@ -17,6 +17,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -178,7 +182,7 @@
           <button class="cat-tab px-4 py-2 bg-amber-500 text-black transition-all" data-cat="pizzas">Pizzas</button>
           <button class="cat-tab px-4 py-2 bg-[#181A19] text-creamText border border-amber-500/30 hover:border-amber-500 transition-all" data-cat="empanadas">Empanadas & Fainá</button>
           <button class="cat-tab px-4 py-2 bg-[#181A19] text-creamText border border-amber-500/30 hover:border-amber-500 transition-all" data-cat="tartas">Tartas</button>
-          <button class="cat-tab px-4 py-2 bg-[#181A19] text-creamText border border-amber-500/30 hover:border-amber-500 transition-all" data-cat="sandwiches">Sandwiches</button>
+          <button class="cat-tab px-4 py-2 bg-[#181A19] text-creamText border border-amber-500/30 hover:border-amber-500 transition-all" data-cat="sandwiches">Sandwiches y Fritas</button>
           <button class="cat-tab px-4 py-2 bg-[#181A19] text-creamText border border-amber-500/30 hover:border-amber-500 transition-all" data-cat="bebidas">Bebidas</button>
         </div>
 
@@ -211,10 +215,10 @@
               </div>
             </div>
 
-            <!-- TAB CONTENT: SANDWICHES -->
+            <!-- TAB CONTENT: SANDWICHES Y FRITAS -->
             <div class="cat-panel hidden space-y-4" id="panel-sandwiches">
               <div class="bg-[#181A19] border border-amber-500/20 p-6 shadow-sm">
-                <h3 class="font-display text-2xl font-bold border-b border-white/10 pb-3 mb-4 text-amber-300">Lomitos, Milanesas & Hamburguesas</h3>
+                <h3 class="font-display text-2xl font-bold border-b border-white/10 pb-3 mb-4 text-amber-300">Lomitos, Milanesas, Hamburguesas & Papas Fritas</h3>
                 <div class="space-y-4 text-sm" id="sandwich-list"></div>
               </div>
             </div>
@@ -420,10 +424,10 @@
             </div>
           </div>
 
-          <!-- HAMBURGUESAS, LOMITOS Y MILANESAS -->
+          <!-- HAMBURGUESAS, LOMITOS, MILANESAS Y PAPAS FRITAS -->
           <div class="border border-amber-500/20 bg-[#15261D] overflow-hidden">
             <button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none salon-btn group cursor-pointer">
-              <span class="font-display text-2xl text-amber-300 group-hover:text-white transition-colors">Hamburguesas, Lomitos y Milanesas</span>
+              <span class="font-display text-2xl text-amber-300 group-hover:text-white transition-colors">Hamburguesas, Lomitos, Milanesas y Papas Fritas</span>
               <span class="text-xl font-light text-amber-400 group-hover:text-white icon">+</span>
             </button>
             <div class="salon-content hidden px-6 pb-6 pt-2 border-t border-white/5">
@@ -457,6 +461,17 @@
                     <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga, Tomate, Jamón, Queso y Huevo</span><span class="font-mono font-bold text-amber-400">$17.000</span></div>
                     <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Lechuga, Tomate, Jamón, Queso, Huevo, Panceta y Morrón</span><span class="font-mono font-bold text-amber-400">$19.000</span></div>
                     <div class="flex justify-between items-baseline border-b border-white/5 pb-2 text-white/60"><span>Adicional Cheddar</span><span class="font-mono font-bold text-amber-400">$2.000</span></div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="font-display text-lg text-amber-300 mb-2">Papas Fritas y Adicionales</h4>
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Papas Fritas (Porción Chica)</span><span class="font-mono font-bold text-amber-400">$8.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Papas Fritas (Porción Grande)</span><span class="font-mono font-bold text-amber-400">$10.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Sándwich + Papas (agregar porción)</span><span class="font-mono font-bold text-amber-400">$4.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Adicional Cheddar (para Papas)</span><span class="font-mono font-bold text-amber-400">$2.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Adicional Panceta (para Papas)</span><span class="font-mono font-bold text-amber-400">$2.000</span></div>
+                    <div class="flex justify-between items-baseline border-b border-white/5 pb-2"><span>Adicional Provenzal (para Papas)</span><span class="font-mono font-bold text-amber-400">$2.000</span></div>
                   </div>
                 </div>
               </div>
@@ -922,7 +937,19 @@
         { name: 'Hamburguesa Lechuga, Tomate, Jamón y Queso', price: 12000 },
         { name: 'Hamburguesa Lechuga, Tomate, Jamón, Queso y Huevo', price: 14000 },
         { name: 'Hamburguesa Completa (Panceta y Morrón)', price: 16000 },
-        { name: 'Adicional Cheddar', price: 2000 }
+        { name: 'Adicional Cheddar (Milanesas/Hamburguesas)', price: 2000 },
+
+        // --- PAPAS FRITAS ---
+        { name: 'Papas Fritas (Porción Chica)', price: 6000 },
+        { name: 'Papas Fritas (Porción Grande)', price: 8000 },
+
+        // --- AGREGADO DE PAPAS A UN SÁNDWICH ---
+        { name: 'Sándwich + Papas (agregar porción)', price: 4000 },
+
+        // --- ADICIONALES EXCLUSIVOS PARA PAPAS ---
+        { name: 'Adicional Provenzal (para Papas)', price: 3000 },
+        { name: 'Adicional Panceta (para Papas)', price: 3000 },
+        { name: 'Adicional Cheddar (para Papas)', price: 3000 }
       ];
 
       const bebidaItems = [
